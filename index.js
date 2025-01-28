@@ -53,7 +53,7 @@ const resetRecherche = () => {
 };
 
 // Ajout des écouteurs d'événements
-document.getElementById('recherche').addEventListener('input', rechercheProduits);
+document.getElementById('recherche').addEventListener('keyup', rechercheProduits);
 
 // Affichage initial des produits
 affichage();
