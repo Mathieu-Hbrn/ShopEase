@@ -18,7 +18,8 @@ const affichage = (produitsAafficher = produitsAffiches) => {
             <button onclick="supprimerProduit(${produit.id})">Supprimer</button>
         </div>`
     );
-    affichageProduit.innerHTML = produitHTML;
+    affichageProduit.innerHTML = ""
+    produitHTML.forEach((ligne) => {affichageProduit.innerHTML += ligne; });
 
     afficherPrixTotal(produitsAafficher);
 };
